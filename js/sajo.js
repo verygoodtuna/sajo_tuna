@@ -16,6 +16,10 @@ $(function () {
         $('.ent_box').toggleClass('on')
     })
 
+    $('.family').on('click', function () {
+        $('.fa_box').toggleClass('on')
+    })
+
     $('.v_slide').slick ({
         arrows: false,
         dots: true,

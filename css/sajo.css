@@ -12,7 +12,7 @@
 
 .header {
     position: relative;
- }
+}
 
 .header {
     position: fixed;
@@ -21,6 +21,7 @@
     right: 0;
     z-index: 1000;
     padding: 20px 0 20px 0;
+    background: #fff;
 
     transition: .5s;
     border-bottom: 1px solid transparent;
@@ -34,7 +35,7 @@
     background: #fff;
     height: 90px;
 
-    border-bottom: 1px solid #ddd;
+    /* border-bottom: 1px solid #ddd; */
     box-shadow: 0 0 20px 0 #cfcfcf;
 }
 
@@ -182,6 +183,7 @@
 
     opacity: 0;
     visibility: hidden;
+    transition: .3s;
 }
 
 .header .ent_box.on {
@@ -258,7 +260,7 @@
     position: absolute;
     padding: 50px 0;
     margin: 0 auto;
-    bottom: 30px;
+    bottom: 1px;
     left: 0;
     transform: translate(0, 100%);
 
@@ -275,9 +277,11 @@
     opacity: 1;
     visibility: visible;
 
-    
-    bottom:-1px;
+    bottom: -2px;
     z-index: 999;
+
+    border-top: 1px solid transparent;
+    box-shadow: 0px 10px 20px -10px  #cfcfcf;
 }
 
 .header .lnb_con::after {
@@ -373,7 +377,7 @@
 }
 
 .main_visual {
-    padding: 137px 0 42px 0;
+    padding: 137px 0 0 0;
 }
 
 .main_visual .v_slide {
@@ -1070,9 +1074,12 @@
     justify-content: flex-end;
     margin: 30px 0 0 0;
     pointer-events: none;
+
+    position: relative;
+
 }
 
-.f .bottom .right .family a{
+.f .bottom .right .family span{
     display: flex;
     align-items: center;
     border: 1px solid #616161;
@@ -1082,9 +1089,22 @@
     font-weight: 400;
 
     gap: 10px;
+    
 }
 
 .f .bottom .right .family .d {
     font-size: 20px;
     font-weight: 500;
+}
+
+.f .f_family {
+    position: absolute;
+    right: 50%;
+
+    background: #fff;
+    display: none;
+}
+
+.f .fa_box ul>li {
+    font-size: 12px;
 }
