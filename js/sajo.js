@@ -12,6 +12,10 @@ $(function () {
         $('.lnb_con').toggleClass('on')
     })
 
+    $('.entrepreneur').on('click', function () {
+        $('.ent_box').toggleClass('on')
+    })
+
     $('.v_slide').slick ({
         arrows: false,
         dots: true,
